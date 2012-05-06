@@ -1,8 +1,8 @@
 (defproject storm-starter "0.0.1-SNAPSHOT"
-  :source-path "src/clj"
-  :java-source-path "src/jvm"
+  ; :source-path "src/clj"
+  ; :java-source-path "src/jvm"
   :javac-options {:debug "true" :fork "true"}
-  :resources-path "multilang"
+  ; :resources-path "multilang"
   :aot :all
   :jvm-opts ["-Djava.library.path=/usr/local/lib:/opt/local/lib:/usr/lib"]
   :repositories {

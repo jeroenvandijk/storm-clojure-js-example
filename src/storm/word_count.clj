@@ -1,4 +1,4 @@
-(ns storm.starter.clj.word-count
+(ns storm.word-count
   (:import [backtype.storm StormSubmitter LocalCluster])
   (:use [backtype.storm clojure config])
   (:gen-class))
@@ -66,9 +66,5 @@
     ))
 
 (defn -main [name]
-  (StormSubmitter/submitTopology
-   name
-   {TOPOLOGY-DEBUG true
-    TOPOLOGY-WORKERS 3}
-   (mk-topology)))
+  (run-local!))
 
